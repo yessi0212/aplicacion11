@@ -1,0 +1,462 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Proyecto CBTis 16</title>
+
+<!-- grupo CSS -->
+<link rel="stylesheet" href="css/proCBT.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/miestilo.css">
+<!-- grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/tecMecanica2.jpg')">
+  <div data-role="page" id="Principal" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>CBTis 16.</h1>
+    </div>
+    
+    <div align="center">
+       <!-- Start WOWSlider.com -->
+<iframe src="visor/wowslide_indexr.html" id="visor"></iframe>
+<!-- End WOWSlider.com -->
+    </div>
+ <div>
+       <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+         <li class="ui-first-child ui-last-child">
+           <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <h2>Datos Del Plantel.</h2>
+           </a>
+        </li>
+         <li class="ui-first-child ui-last-child">
+           <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>Misión Y Visión.</h2>
+           </a>
+         </li>
+           <li class="ui-first-child ui-last-child">
+           <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>Oferta Educativa (Especialidades).</h2>
+           </a>
+           </li>
+           <li class="ui-first-child ui-last-child">
+           <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>Galeria.</h2>
+           </a>
+           </li>
+         </ul>
+ </div>
+ 
+      <div align="center">
+        <img src="imagenes/fondo.jpg" class="imagen">
+     </div>
+      
+     <div data-role="main" class="ui-content">
+        <div data-role="collapsible" data-content-theme="false" align="center" id="datos">
+        <h1> Datos del Programador</h1>
+        
+           <div align="justify">
+              <h4>Nombre:</h4><h2> Yessica Perez Morales.</h2>
+              <h4>Plantel en el que estudia:</h4><h2>Centro de Bachillerato Tecnológico, industrial y de servicios no. 16.</h2>
+              <h4>Materia:</h4><h2>Desarrolla Aplicaciones Moviles.</h2>
+              <h4>Profesor:</h4><h2>José Antonio Gómez Hernández.</h2>
+           </div>
+        </div>
+     </div>
+     
+
+ 
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+     <h4>Proyecto CBTis 16</h4>
+   </div>
+  <div>  
+    <img src="res/android/mdpi.png" width="50" height="50">
+   </div>
+   <div>
+     <h4>Yessica Perez Morales</h4>
+     </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>Datos Del Plantel.</h1>
+   </div>
+   <div data-role="content" align="center">
+    
+    <table id="tabla">
+    <th>Plantel</th>
+    <td>CENTRO DE BACHILLERATO TECNOLÓGICO INDUSTRIAL Y DE SERVICIOS No. 16 (CBTIS No. 16)</td>
+    <tr>
+    <th>Estado</th>
+    <td>Puebla</td>
+    <tr>
+    <th>Director</th>
+    <td>Ramos Bravo Anselmo</td>
+    <tr>
+    <th>CCT</th>
+    <td>21DCT0046P</td>
+    <tr>
+    <th>Dirección</th>
+    <td>Fracc. Ricardo Flores Magon Domicilio Conocido S/N. Atlixco, Puebla.</td>
+    <tr>
+    <th>CP</th>
+    <td>74240</td>
+    <tr>
+    <th>Facebook</th>
+    <td>https://es-la.facebook.com/CBTis-16-Original-248892438580626/</td>
+    </table>
+    
+    <div>
+      <p class="mapa"><a href="http://www.cbtis016.edu.mx/index.php/plantel/ubicacion-del-plantel/" ></a></p>
+      <p class="mapa"><a href="http://www.cbtis016.edu.mx/index.php/plantel/ubicacion-del-plantel/" >Mapa De Ubicación Del Plantel</a></p>
+    <div>
+    </div>
+</div>
+   
+   
+   <div data-role="footer" data-theme="a" data-position="fixed">
+     <h4>Yessica Perez Morales</h4>
+   </div>
+   </div>
+</div>
+   
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>Misión Y Visión.</h1>
+  </div>
+  <div data-role="content" align="center">
+  
+     <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false" align="center">
+        <h1>Misión </h1>
+          <div align="justify">
+          <div>
+          <p>Formar personas con conocimientos tecnológicos en las áreas industrial, comercial y de servicios, a través de la preparación de profesionales técnicos y bachilleres, con el fin de contribuir al desarrollo sustentable del país.
+          <p>
+          </div>
+     
+     <div align="center">
+       <img src="imagenes/mision.jpg">
+     </div>
+     </div>
+          </div>
+  
+     </div>
+     
+     
+    <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false" align="center">
+        <h1>Visión</h1>
+          <div align="justify">
+            <div>
+            <p>Ser una institución que proporcione una formación integral y pertinente de acuerdo a las exigencias derivadas de la competitividad mundial y el entorno y vocación local, además de tener la flexibilidad para satisfacer los intereses, aspiraciones y posibilidades de la población que demanda este nivel educativo en nuestro plantel.
+            </p>
+            </div>
+            
+     <div align="center">
+     <img src="imagenes/vision.jpg">
+     </div>
+     
+          </div>
+      </div>
+     </div>
+  </div>
+      <div data-role="footer" data-theme="a" data-position="fixed">
+        <h4>Yessica Perez Morales</h4>
+        </div>
+       </div>
+       </div>
+      
+      
+      
+      
+      
+       
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>Oferta Educativa (Especialidades).</h1>
+  </div>
+<div data-role="content" align="center">
+       <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false" align="center">
+        <h1>TÉCNICO EN PROGRAMACIÓN</h1>
+          <div align="justify">
+            <div>
+            <p>Persona con conocimientos, habilidades y actitudes, capaz de ingresar a empresas de desarrollo de software, diseño gráfico, mantenimiento, outsourcing.
+            </p>
+            </div>
+            <br>
+            <div align="center">
+            <h4>PERFIL DE EGRESO:</h4>
+            </div>
+            <div align="justify">
+            <p>La formación que ofrece la carrera de Técnico en programación permite al egresado, a través de la articulación de saberes de diversos campos, realizar actividades dirigidas a la:
+            </p>
+            <p>
+•	Instalación y desarrollo de software de aplicación utilizando programación estructurada y orientada a objetos en ambientes web y móviles, con almacenamiento persistente de datos.
+            </p>
+            <p>
+•	 Así como la configuración y administración de plataforma e-learning y Comercio electrónico.
+            </p>
+            </div>
+            <br>
+            <div align="center">
+            <h4>OPORTUNIDADES DE INSERCIÓN LABORAL:</h4>
+            </div>
+            <div align="justify">
+            <p>
+            •	 Desarrolladores de software.
+            </p>
+            <p>
+•	 Analistas de sistemas.
+            </p>
+            <p>
+•	Analista de programas de cómputo.
+            </p>
+            <p>
+•	 Programador de sistemas de cómputo.
+            </p>
+            <p>.
+•	 Edición de software y edición de software integrada con la reproducción
+            </p>
+            <p>
+•	 Escuelas de computación del sector privado.
+             </p>
+             <p>
+•	 Servicios de diseño de sistemas de cómputo y servicios relacionados.
+            </p>
+            <p>
+•	 Escuelas de computación del sector público.
+            </p>
+
+
+            </div>
+            
+     <div align="center">
+     <img src="imagenes/tecProgra.jpg" width="80%" height="30%">
+     </div>
+     
+          </div>
+      </div>
+     </div>
+  
+  
+  <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false" align="center">
+        <h1>TÉCNICO EN MECÁNICA INDUSTRIAL</h1>
+          <div align="justify">
+            <div>
+            <p>Profesionista que da mantenimiento a los sistemas de transmisión de potencia utilizando las máquinas herramientas convencionales, de control numérico, máquinas de soldar con arco eléctrico y oxigas auxiliándose de los procesos de ajuste de piezas mecánicas.
+            </p>
+            <br>
+             <div align="center">
+            <h4>PERFIL DE EGRESO:</h4>
+            </div>
+            <div align="justify">
+            <p>
+            Durante el proceso de formación de los cinco módulos, el estudiante desarrollará o reforzará las siguientes competencias profesionales, correspondientes al Técnico en Mecánica Industrial:
+            </p>
+            <p>
+•	 Suelda y ajusta piezas mecánicas.
+            </p>
+            <p>
+•	 Maquina piezas mecánicas en talador y torno.
+            </p>
+            <p>
+•	 Maquina piezas mecánicas en fresadora, rectificadora y cepillo.
+            </p>
+            <p>
+•	 Maquina piezas mecánicas por CNC.
+             </p>
+             <p>
+•	 Mantiene sistemas de transmisión de potencia.
+            </p>
+
+            </div>
+            <br>
+            <div align="center">
+            <h4>OPORTUNIDADES DE INSERCIÓN LABORAL.:</h4>
+            </div>
+            
+            <div align="justify">
+            Industrias de transformación y procesos como: Textiles, del plástico, petroleras, metalmecánica, automotriz, pesqueras, mineras, siderúrgicas, agrícolas, alimenticia, química, de muebles, forestal, papelera, gráfica y en general todo tipo de industria de la producción y manufacturera que utilice maquinaria entre otras.
+            </div>
+            </div>
+            
+     <div align="center">
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','imagenes/tecMecanica2.jpg',1)"><img src="imagenes/tecMecanica.jpg" width="300" height="168" id="Image6"></a> 
+       </div>
+     
+          </div>
+      </div>
+     </div>
+  
+  
+  
+  
+  <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false" align="center">
+        <h1>TÉCNICO EN ELECTRICIDAD</h1>
+          <div align="justify">
+            <div>
+            <p>La carrera de Técnico en Electricidad permite al estudiante sustentar la demanda de ocupación de Técnicos Electricistas en el sector productivo y de servicios, capaz de diseñar y realizar instalaciones eléctricas residenciales y comerciales, así como proporcionar mantenimiento a máquinas eléctricas.
+            </p>
+            <br>
+            <div align="center">
+            <h4>PERFIL DE EGRESO:</h4>
+            </div>
+            <div align="justify">
+            <p>
+            Durante el proceso de formación de los cinco módulos, el estudiante desarrollará o reforzará las siguientes competencias profesionales, correspondientes al Técnico en Electricidad.
+            </p>
+            <p>
+•	 Desarrolla instalaciones eléctricas residenciales y comerciales.
+            </p>
+            <p>
+•	 Mantiene los motores y generadores de CA y CC.
+</p>
+<p>
+•	 Mantiene en operación los circuitos de control electromagnético y electrónico.
+</p>
+<p>
+•	 Mantiene los sistemas de iluminación y de energía renovable.
+</p>
+<p>
+•	 Mantiene instalaciones eléctricas de media y baja tensión.
+</p>
+
+            </div>
+            <br>
+            <div align="center">
+            <h4>OPORTUNIDADES DE INSERCIÓN LABORAL.</h4>
+            </div>
+            <div align="justify">
+             Todas estas competencias posibilitan al egresado su incorporación al mundo laboral o desarrollar procesos productivos independientes, de acuerdo con sus intereses profesionales o las necesidades en su entorno social.
+            </div>
+            </div>
+            
+     <div align="center">
+     <img src="imagenes/tecElectricidad.jpg">
+     </div>
+     
+          </div>
+      </div>
+     </div>
+  
+  
+  
+  
+  <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false" align="center">
+        <h1>TÉCNICO EN LOGISTICA</h1>
+          <div align="justify">
+            <div>
+            <p>La carrera de Técnico en logística ofrece las competencias profesionales que permiten al estudiante realizar actividades dirigidas a la administración de bienes, planificando los suministros destinados al almacenamiento de manera manual y electrónica, la organización de los nodos logísticos para el transporte de mercancías así como, proveer los servicios y atención al cliente sobre los movimientos y
+los costos de la cadena logística.
+            </p>
+            <br>
+            <div align="center">
+            <h4>PERFIL DE EGRESO:</h4>
+            </div>
+            <div align="justify">
+            <p>
+            Durante el proceso de formación de los cinco módulos, el estudiante desarrollará o reforzará las siguientes competencias profesionales:
+            </p>
+            <p>•	Supervisa el proceso de suministro de bienes 
+            </p>
+            <p>
+•	Apoya en el proceso de administración del servicio de almacenaje de bienes 
+</p>
+<p>
+•	Organiza el transporte de mercancías
+</p>
+<p>
+•	 Provee servicio y atención al cliente sobre los movimientos de logística
+</p>
+<p>
+•	Organiza los costos de la cadena logística
+
+</p>
+
+            </div>
+            <br>
+            <div align="center">
+            <h4>OPORTUNIDADES DE INSERCIÓN LABORAL.</h4>
+            </div>
+            <div align="justify">
+            <p>
+             El técnico en logística es un profesional que puede trabajar en los departamentos de Compras, Almacenes, Ventas, Logística, Distribución y Transporte, Importación y Exportación, entre otros; con responsabilidad social y desempeño ético, con capacidades de desarrollo autónomo, de liderazgo y de investigación. Competente para diseñar y administrar sistemas logísticos, realizando funciones de consultor, gestor o formador de empresas con proyección social; atendiendo los requerimientos de los sectores productivos de bienes o servicios nacionales e internacionales.
+             </p>
+            </div>
+            </div>
+            <br>
+     <div align="center">
+     <img src="imagenes/tecLogistica.jpg">
+     </div>
+     </div>
+          </div>
+      </div>
+     </div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+       <h4>Yessica Perez Morales</h4>
+      </div>
+      
+      
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>Galeria.</h1>
+   </div>
+   <div data-role="content" align="center">
+    <div class="galeria">
+     <img src="imagenes/dgeti.jpg" class="imagen">
+     <img src="imagenes/desfile.JPG" class="imagen" >
+     <p>CBTis 16 participando en el desfile</p>
+     <img src="imagenes/Escolta.JPG" class="imagen">
+     <p>Escolta de CBTis</p>
+     <img src="imagenes/feria vocacional.JPG" class="imagen">
+     <p>Feria vocacional en el plantel de CBTis 16</p>
+     <img src="imagenes/Grupo 4° H.jpg" class="imagen">
+     <p>Grupo 4° "H" </p>
+     <img src="imagenes/Homenaje.jpg" class="imagen">
+     <p> Homenaje </p>
+     <img src="imagenes/basquet.jpg" class="imagen">
+     <p>Equipo de Basquetball de la institución</p>
+     <img src="imagenes/cb.jpg" class="imagen">
+     <p>Alumnas del plantel</p>
+    </div>
+   </div>
+</div>   
+</body>
+</html>
